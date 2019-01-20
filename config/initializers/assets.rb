@@ -11,4 +11,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-# Rails.application.config.assets.precompile += %w( admin.js admin.css )
+ Rails.application.config.assets.precompile += %w( all.js scmplayer.js bootstrap.js easing.js jquery-1.7.2.js jquery-2.2.3.min.js jquery.coutdown.js jquery.countup.js jquery.prettyPhoto.js jquery.quicksand.js script.js time.js timer.js owl.carousel.js move-top.js moment.js moment-timezone-with-data.js jquery.quicksand.js admin.js admin.css bootstrap.css contact.css font-awesome.css fontawesome-all.css prettyPhoto.css owl.carousel.css owl.theme.css jquery.countdown.css style.css )

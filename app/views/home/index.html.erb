@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<section class="banner-bottom-w3ls-agileinfo">
+		<!-- Portfolio -->
+		<div class="portfolio" id="portfolio">
+			<div class="container">
+				<h3 class="tittle text-center">Latest Collection</h3>
+				<div class="inner-sec-wthree-agileits">
+
+					<ul class="portfolio-categ filter text-center mb-lg-5 mb-3">
+						<li class="port-filter all active">
+							<a href="#">All</a>
+						</li>
+						
+					</ul>
+
+
+					<ul class="portfolio-area clearfix">
+
+     <% @blogs.each do |blog| %>
+     <li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
+							<div>
+								<span class="image-block">
+<a class="image-zoom" href='<%= url_for(blog.image)  %>' data-gal="prettyPhoto[gallery]">
+
+	
+										<%= image_tag(blog.image, :class => "img-fluid rounded", style: 'height:250px;width:250px;') %>
+			
+									</a>
+                     <p><%= blog.description %></p>
+								</span>
+							</div>
+						</li>
+    <% end %>
+
+						
+							
+								
+									
+							
+						
+						
+					</ul>
+			
+					<!--end portfolio-area -->
+				</div>
+			</div>
+		</div>
+	</section>
+   
+ 
+  
+
+<br>
+
